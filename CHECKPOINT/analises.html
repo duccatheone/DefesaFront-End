@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--
+  CHECKPOINT - Portal gamer independente
+  Arquivo: analises.html
+  Descricao: Análises de jogos com notas, pontos positivos e negativos e recomendações por perfil.
+  Autores: Eduardo Ducca e Marcelo Luz
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Análises de jogos com notas, pontos positivos e negativos e recomendações por perfil.">
+  <meta name="theme-color" content="#0B1120">
+  <title>Análises | Checkpoint</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <a id="ir-ao-conteudo" href="#conteudo">Ir para o conteúdo</a>
+  <header id="topo">
+    <nav class="navbar navbar-expand-xl nx-nav" aria-label="Navegação principal">
+      <div class="conteiner">
+        <a class="navbar-brand marca" href="index.html" aria-label="Checkpoint - página inicial"><img src="img/logo.svg" alt="" width="38" height="38"><span class="marca-texto">CHECK<span>POINT</span></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir ou fechar o menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="analises.html">Análises</a></li>
+          <li class="nav-item"><a class="nav-link" href="lancamentos.html">Lançamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="plataformas.html">Plataformas</a></li>
+          <li class="nav-item"><a class="nav-link" href="historia.html">História</a></li>
+          <li class="nav-item"><a class="nav-link" href="favoritos.html">Favoritos <span class="contador contador-favoritos">0</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="comunidade.html">Comunidade</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link link-externo" href="https://br.ign.com" target="_blank" rel="noopener noreferrer">IGN ↗<span class="visually-hidden"> (abre em nova aba)</span></a></li>
+          <li class="nav-item"><a class="nav-link link-externo" href="https://www.gamespot.com" target="_blank" rel="noopener noreferrer">GameSpot ↗<span class="visually-hidden"> (abre em nova aba)</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="cabecalho-pagina" aria-labelledby="titulo-pagina">
+      <div class="conteiner">
+        <h1 id="titulo-pagina">Análises</h1>
+        <p>Resumo da experiência, pontos positivos e negativos e para quem cada jogo é indicado.</p>
+      </div>
+    </section>
+    <section class="secao" aria-label="Análises de jogos">
+      <div class="conteiner">
+        <p class="aviso-demo"><strong>Notas demonstrativas.</strong> As avaliações foram escritas para este projeto acadêmico e refletem a opinião da equipe, em escala de 0 a 10.</p>
+        <nav class="abas-categoria indice-analises" aria-label="Ir para uma análise">
+          <a class="aba" href="#zelda-botw">The Legend of Zelda: Breath of the Wild</a>
+          <a class="aba" href="#elden-ring">Elden Ring</a>
+          <a class="aba" href="#hades">Hades</a>
+          <a class="aba" href="#celeste">Celeste</a>
+          <a class="aba" href="#stardew-valley">Stardew Valley</a>
+          <a class="aba" href="#baldurs-gate-3">Baldur's Gate 3</a>
+        </nav>
+        <article class="analise" id="zelda-botw">
+          <img src="img/zelda-botw.svg" alt="Ilustração de capa do jogo The Legend of Zelda: Breath of the Wild" loading="lazy">
+          <div>
+            <div class="analise-topo">
+              <h2>The Legend of Zelda: Breath of the Wild</h2>
+              <span class="nota nota-grande" aria-label="Nota 9,7 de 10">9,7</span>
+            </div>
+            <div class="analise-meta"><span class="selo selo-laranja">Aventura</span><span class="selo selo-cinza">2017</span><span class="selo">Nintendo</span></div>
+            <p>Hyrule funciona como um grande quebra-cabeça de física e sistemas. Escalar qualquer montanha, planar ou combinar elementos recompensa a curiosidade, e o jogo quase nunca segura a mão do jogador. A sensação de descoberta é constante.</p>
+            <div class="pros-contras">
+              <div class="pros"><h3>Pontos positivos</h3><ul><li>Mundo aberto livre e cheio de descobertas</li><li>Física e elementos geram soluções criativas</li><li>Trilha sonora discreta que valoriza a exploração</li></ul></div>
+              <div class="contras"><h3>Pontos negativos</h3><ul><li>Armas quebram com frequência</li><li>História contada de forma pouco direta</li><li>Taxa de quadros oscila em áreas mais pesadas</li></ul></div>
+            </div>
+            <p class="rotulo-perfis">Recomendado para</p>
+            <div class="perfis"><span class="selo selo-oliva">Exploradores</span><span class="selo selo-oliva">Fãs de quebra-cabeças</span><span class="selo selo-oliva">Iniciantes em mundo aberto</span></div>
+            <p class="rotulo-perfis">Pode não agradar</p>
+            <div class="perfis"><span class="selo selo-cinza">Quem prefere roteiro linear e guiado</span></div>
+            <div class="cartao-acoes" style="margin-top: 1rem;"><button class="btn-fav" type="button" data-id="zelda-botw" aria-pressed="false">♡ Favoritar</button><a class="btn btn-sm btn-outline-info" href="catalogo.html">Ver no catálogo</a></div>
+          </div>
+        </article>
+        <article class="analise" id="elden-ring">
+          <img src="img/elden-ring.svg" alt="Ilustração de capa do jogo Elden Ring" loading="lazy">
+          <div>
+            <div class="analise-topo">
+              <h2>Elden Ring</h2>
+              <span class="nota nota-grande" aria-label="Nota 9,5 de 10">9,5</span>
+            </div>
+            <div class="analise-meta"><span class="selo selo-laranja">RPG</span><span class="selo selo-cinza">2022</span><span class="selo">PC</span><span class="selo">PlayStation</span><span class="selo">Xbox</span></div>
+            <p>Mundo aberto com combate exigente. O jogo explica pouco e incentiva tentar, errar e voltar mais forte. Há várias formas de enfrentar os chefes, incluindo chamar ajuda ou investir em builds diferentes.</p>
+            <div class="pros-contras">
+              <div class="pros"><h3>Pontos positivos</h3><ul><li>Grande variedade de builds e estilos de combate</li><li>Regiões memoráveis e cheias de segredos</li><li>Liberdade para escolher a ordem da aventura</li></ul></div>
+              <div class="contras"><h3>Pontos negativos</h3><ul><li>Dificuldade pode afastar iniciantes</li><li>Sistemas pouco explicados</li><li>Alguns chefes opcionais têm picos de dificuldade</li></ul></div>
+            </div>
+            <p class="rotulo-perfis">Recomendado para</p>
+            <div class="perfis"><span class="selo selo-oliva">Fãs de desafio</span><span class="selo selo-oliva">Quem gosta de explorar sem guia</span><span class="selo selo-oliva">Jogadores de RPG de ação</span></div>
+            <p class="rotulo-perfis">Pode não agradar</p>
+            <div class="perfis"><span class="selo selo-cinza">Quem busca uma experiência tranquila</span></div>
+            <div class="cartao-acoes" style="margin-top: 1rem;"><button class="btn-fav" type="button" data-id="elden-ring" aria-pressed="false">♡ Favoritar</button><a class="btn btn-sm btn-outline-info" href="catalogo.html">Ver no catálogo</a></div>
+          </div>
+        </article>
+        <article class="analise" id="hades">
+          <img src="img/hades.svg" alt="Ilustração de capa do jogo Hades" loading="lazy">
+          <div>
+            <div class="analise-topo">
+              <h2>Hades</h2>
+              <span class="nota nota-grande" aria-label="Nota 9,4 de 10">9,4</span>
+            </div>
+            <div class="analise-meta"><span class="selo selo-laranja">Roguelike</span><span class="selo selo-cinza">2020</span><span class="selo">PC</span><span class="selo">Nintendo</span><span class="selo">PlayStation</span><span class="selo">Xbox</span></div>
+            <p>Partidas curtas e intensas em que cada tentativa avança a história. O combate é fluido, as armas mudam bastante o estilo de jogo e a narrativa aproveita a repetição em vez de escondê-la.</p>
+            <div class="pros-contras">
+              <div class="pros"><h3>Pontos positivos</h3><ul><li>Combate rápido e muito responsivo</li><li>Narrativa integrada à repetição das partidas</li><li>Arte, dublagem e trilha de alto nível</li></ul></div>
+              <div class="contras"><h3>Pontos negativos</h3><ul><li>Pode soar repetitivo para quem não gosta do gênero</li><li>Ver o fim da história exige muitas partidas</li><li>Muitos menus e sistemas de melhoria</li></ul></div>
+            </div>
+            <p class="rotulo-perfis">Recomendado para</p>
+            <div class="perfis"><span class="selo selo-oliva">Fãs de ação</span><span class="selo selo-oliva">Quem gosta de mitologia</span><span class="selo selo-oliva">Jogadores com pouco tempo por sessão</span></div>
+            <p class="rotulo-perfis">Pode não agradar</p>
+            <div class="perfis"><span class="selo selo-cinza">Quem prefere campanhas lineares</span></div>
+            <div class="cartao-acoes" style="margin-top: 1rem;"><button class="btn-fav" type="button" data-id="hades" aria-pressed="false">♡ Favoritar</button><a class="btn btn-sm btn-outline-info" href="catalogo.html">Ver no catálogo</a></div>
+          </div>
+        </article>
+        <article class="analise" id="celeste">
+          <img src="img/celeste.svg" alt="Ilustração de capa do jogo Celeste" loading="lazy">
+          <div>
+            <div class="analise-topo">
+              <h2>Celeste</h2>
+              <span class="nota nota-grande" aria-label="Nota 9,0 de 10">9,0</span>
+            </div>
+            <div class="analise-meta"><span class="selo selo-laranja">Plataforma</span><span class="selo selo-cinza">2018</span><span class="selo">PC</span><span class="selo">Nintendo</span><span class="selo">PlayStation</span><span class="selo">Xbox</span></div>
+            <p>Plataforma de precisão com controles afiados e uma história sensível sobre ansiedade e autoaceitação. Cada fase ensina uma mecânica nova e o modo de assistência permite ajustar a dificuldade.</p>
+            <div class="pros-contras">
+              <div class="pros"><h3>Pontos positivos</h3><ul><li>Controles precisos e responsivos</li><li>Modo de assistência para ajustar a dificuldade</li><li>Trilha sonora e história emocionantes</li></ul></div>
+              <div class="contras"><h3>Pontos negativos</h3><ul><li>Fases opcionais são muito difíceis</li><li>Muitas tentativas podem frustrar</li><li>Campanha principal é relativamente curta</li></ul></div>
+            </div>
+            <p class="rotulo-perfis">Recomendado para</p>
+            <div class="perfis"><span class="selo selo-oliva">Fãs de plataforma</span><span class="selo selo-oliva">Quem gosta de histórias pessoais</span><span class="selo selo-oliva">Jogadores que buscam desafio</span></div>
+            <p class="rotulo-perfis">Pode não agradar</p>
+            <div class="perfis"><span class="selo selo-cinza">Quem não tolera repetir trechos várias vezes</span></div>
+            <div class="cartao-acoes" style="margin-top: 1rem;"><button class="btn-fav" type="button" data-id="celeste" aria-pressed="false">♡ Favoritar</button><a class="btn btn-sm btn-outline-info" href="catalogo.html">Ver no catálogo</a></div>
+          </div>
+        </article>
+        <article class="analise" id="stardew-valley">
+          <img src="img/stardew-valley.svg" alt="Ilustração de capa do jogo Stardew Valley" loading="lazy">
+          <div>
+            <div class="analise-topo">
+              <h2>Stardew Valley</h2>
+              <span class="nota nota-grande" aria-label="Nota 9,2 de 10">9,2</span>
+            </div>
+            <div class="analise-meta"><span class="selo selo-laranja">Simulação</span><span class="selo selo-cinza">2016</span><span class="selo">PC</span><span class="selo">Nintendo</span><span class="selo">PlayStation</span><span class="selo">Xbox</span></div>
+            <p>Uma fazenda para chamar de sua. Plantar, pescar, minerar e conversar com os moradores compõem um ritmo relaxante, com muita liberdade para decidir o que fazer em cada dia.</p>
+            <div class="pros-contras">
+              <div class="pros"><h3>Pontos positivos</h3><ul><li>Ritmo relaxante e muita liberdade</li><li>Moradores carismáticos e relações duradouras</li><li>Conteúdo vasto e modo cooperativo</li></ul></div>
+              <div class="contras"><h3>Pontos negativos</h3><ul><li>Início lento</li><li>Gerenciamento de itens pode ser trabalhoso</li><li>Excesso de tarefas gera sensação de obrigação</li></ul></div>
+            </div>
+            <p class="rotulo-perfis">Recomendado para</p>
+            <div class="perfis"><span class="selo selo-oliva">Quem busca jogos tranquilos</span><span class="selo selo-oliva">Fãs de simulação</span><span class="selo selo-oliva">Jogadores que gostam de planejar</span></div>
+            <p class="rotulo-perfis">Pode não agradar</p>
+            <div class="perfis"><span class="selo selo-cinza">Quem prefere ação constante</span></div>
+            <div class="cartao-acoes" style="margin-top: 1rem;"><button class="btn-fav" type="button" data-id="stardew-valley" aria-pressed="false">♡ Favoritar</button><a class="btn btn-sm btn-outline-info" href="catalogo.html">Ver no catálogo</a></div>
+          </div>
+        </article>
+        <article class="analise" id="baldurs-gate-3">
+          <img src="img/baldurs-gate-3.svg" alt="Ilustração de capa do jogo Baldur's Gate 3" loading="lazy">
+          <div>
+            <div class="analise-topo">
+              <h2>Baldur's Gate 3</h2>
+              <span class="nota nota-grande" aria-label="Nota 9,7 de 10">9,7</span>
+            </div>
+            <div class="analise-meta"><span class="selo selo-laranja">RPG</span><span class="selo selo-cinza">2023</span><span class="selo">PC</span><span class="selo">PlayStation</span><span class="selo">Xbox</span></div>
+            <p>RPG por turnos com escolhas que realmente mudam a história. O combate tático recompensa o planejamento e quase todo obstáculo tem mais de uma solução, seja pela conversa, pela furtividade ou pela força.</p>
+            <div class="pros-contras">
+              <div class="pros"><h3>Pontos positivos</h3><ul><li>Escolhas com consequências reais</li><li>Combate tático profundo</li><li>Companheiros bem escritos e modo cooperativo</li></ul></div>
+              <div class="contras"><h3>Pontos negativos</h3><ul><li>Regras exigem tempo para aprender</li><li>Campanha muito longa</li><li>Gerenciamento de inventário trabalhoso</li></ul></div>
+            </div>
+            <p class="rotulo-perfis">Recomendado para</p>
+            <div class="perfis"><span class="selo selo-oliva">Fãs de RPG</span><span class="selo selo-oliva">Quem gosta de estratégia por turnos</span><span class="selo selo-oliva">Grupos que querem jogar juntos</span></div>
+            <p class="rotulo-perfis">Pode não agradar</p>
+            <div class="perfis"><span class="selo selo-cinza">Quem tem pouco tempo livre</span></div>
+            <div class="cartao-acoes" style="margin-top: 1rem;"><button class="btn-fav" type="button" data-id="baldurs-gate-3" aria-pressed="false">♡ Favoritar</button><a class="btn btn-sm btn-outline-info" href="catalogo.html">Ver no catálogo</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <div class="conteiner">
+      <div class="rodape-grade">
+        <section aria-labelledby="rodape-sobre">
+          <a class="marca" href="index.html"><img src="img/logo.svg" alt="" width="38" height="38"><span class="marca-texto">CHECK<span>POINT</span></span></a>
+          <h4 id="rodape-sobre" class="somente-leitor">Sobre o portal</h4>
+          <p>Portal gamer independente com notícias, análises, lançamentos e guias de plataformas. Projeto acadêmico de Front-End.</p>
+        </section>
+        <nav aria-labelledby="rodape-explorar">
+          <h4 id="rodape-explorar">Explorar</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="analises.html">Análises</a></li>
+            <li><a href="lancamentos.html">Lançamentos</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="rodape-mais">
+          <h4 id="rodape-mais">Mais</h4>
+          <ul>
+            <li><a href="plataformas.html">Plataformas</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="rodape-fontes">
+          <h4 id="rodape-fontes">Referências externas</h4>
+          <ul>
+            <li><a href="https://br.ign.com" target="_blank" rel="noopener noreferrer">IGN Brasil ↗</a></li>
+            <li><a href="https://www.gamespot.com" target="_blank" rel="noopener noreferrer">GameSpot ↗</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs ↗</a></li>
+            <li><a href="https://getbootstrap.com" target="_blank" rel="noopener noreferrer">Bootstrap ↗</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="rodape-base">
+        <p>&copy; <span id="ano-atual">2026</span> Checkpoint. Projeto acadêmico de Eduardo Ducca e Marcelo Luz.</p>
+        <p>Ilustrações originais. Conteúdo demonstrativo, sem ligação com as empresas citadas.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="alertas" aria-live="polite" aria-atomic="false"></div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--
+  CHECKPOINT - Portal gamer independente
+  Arquivo: comunidade.html
+  Descricao: Formulário para sugerir jogos e enviar opiniões, com validação e armazenamento local.
+  Autores: Eduardo Ducca e Marcelo Luz
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formulário para sugerir jogos e enviar opiniões, com validação e armazenamento local.">
+  <meta name="theme-color" content="#0B1120">
+  <title>Comunidade | Checkpoint</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <a id="ir-ao-conteudo" href="#conteudo">Ir para o conteúdo</a>
+  <header id="topo">
+    <nav class="navbar navbar-expand-xl nx-nav" aria-label="Navegação principal">
+      <div class="conteiner">
+        <a class="navbar-brand marca" href="index.html" aria-label="Checkpoint - página inicial"><img src="img/logo.svg" alt="" width="38" height="38"><span class="marca-texto">CHECK<span>POINT</span></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir ou fechar o menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="analises.html">Análises</a></li>
+          <li class="nav-item"><a class="nav-link" href="lancamentos.html">Lançamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="plataformas.html">Plataformas</a></li>
+          <li class="nav-item"><a class="nav-link" href="historia.html">História</a></li>
+          <li class="nav-item"><a class="nav-link" href="favoritos.html">Favoritos <span class="contador contador-favoritos">0</span></a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="comunidade.html">Comunidade</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link link-externo" href="https://br.ign.com" target="_blank" rel="noopener noreferrer">IGN ↗<span class="visually-hidden"> (abre em nova aba)</span></a></li>
+          <li class="nav-item"><a class="nav-link link-externo" href="https://www.gamespot.com" target="_blank" rel="noopener noreferrer">GameSpot ↗<span class="visually-hidden"> (abre em nova aba)</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="cabecalho-pagina" aria-labelledby="titulo-pagina">
+      <div class="conteiner">
+        <h1 id="titulo-pagina">Comunidade</h1>
+        <p>Sugira jogos, envie opiniões e recomendações para o portal.</p>
+      </div>
+    </section>
+    <section class="secao" aria-label="Formulário da comunidade">
+      <div class="conteiner">
+        <div class="comunidade-layout">
+          <form class="formulario-nx" id="formulario-comunidade" novalidate>
+            <h2>Envie sua mensagem</h2>
+            <div id="mensagem-formulario" aria-live="polite"></div>
+            <div class="campo">
+              <label class="form-label" for="nome">Nome</label>
+              <input class="form-control" type="text" id="nome" name="nome" placeholder="Seu nome completo" required minlength="3" maxlength="60" pattern="[A-Za-zÀ-ÿ ]{3,60}" data-erro-padrao="Use apenas letras e espaços." autocomplete="name">
+              <span class="erro-campo" id="nome-erro"></span>
+            </div>
+            <div class="campo">
+              <label class="form-label" for="email">E-mail</label>
+              <input class="form-control" type="email" id="email" name="email" placeholder="nome@exemplo.com" required autocomplete="email">
+              <span class="erro-campo" id="email-erro"></span>
+            </div>
+            <div class="campo">
+              <label class="form-label" for="categoria">Categoria</label>
+              <select class="form-select" id="categoria" name="categoria" required>
+                <option value="">Selecione uma categoria</option>
+                <option value="Sugestão de jogo">Sugestão de jogo</option>
+                <option value="Opinião">Opinião</option>
+                <option value="Recomendação">Recomendação</option>
+                <option value="Outro assunto">Outro assunto</option>
+              </select>
+              <span class="erro-campo" id="categoria-erro"></span>
+            </div>
+            <div class="campo">
+              <label class="form-label" for="jogo">Jogo relacionado (opcional)</label>
+              <input class="form-control" type="text" id="jogo" name="jogo" placeholder="Ex.: Hollow Knight" maxlength="60">
+              <span class="erro-campo" id="jogo-erro"></span>
+            </div>
+            <div class="campo">
+              <label class="form-label" for="mensagem">Mensagem <span class="contador-caracteres" id="contador-mensagem">0/500</span></label>
+              <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Conte o que você pensa ou qual jogo gostaria de ver aqui (mínimo de 20 caracteres)" required minlength="20" maxlength="500"></textarea>
+              <span class="erro-campo" id="mensagem-erro"></span>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+          </form>
+          <aside class="painel-info" aria-labelledby="titulo-como-funciona">
+            <h2 id="titulo-como-funciona">Como funciona</h2>
+            <ul>
+              <li>Todos os campos, exceto o jogo relacionado, são obrigatórios.</li>
+              <li>As mensagens ficam salvas apenas neste navegador, por meio do localStorage.</li>
+              <li>Nenhum dado é enviado a servidores: o projeto funciona totalmente offline.</li>
+              <li>Você pode excluir qualquer mensagem na lista abaixo.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="secao secao-alt" aria-labelledby="titulo-enviadas">
+      <div class="conteiner">
+        <div class="secao-cabecalho">
+          <h2 id="titulo-enviadas">Mensagens enviadas neste navegador</h2>
+          <button class="btn btn-sm btn-outline-info" type="button" id="limpar-sugestoes">Limpar todas</button>
+        </div>
+        <div class="lista-sugestoes" id="lista-sugestoes"></div>
+        <div class="estado-vazio" id="sem-sugestoes">
+          <h2>Nenhuma mensagem ainda</h2>
+          <p>Quando você enviar uma sugestão ou opinião, ela aparecerá aqui.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <div class="conteiner">
+      <div class="rodape-grade">
+        <section aria-labelledby="rodape-sobre">
+          <a class="marca" href="index.html"><img src="img/logo.svg" alt="" width="38" height="38"><span class="marca-texto">CHECK<span>POINT</span></span></a>
+          <h4 id="rodape-sobre" class="somente-leitor">Sobre o portal</h4>
+          <p>Portal gamer independente com notícias, análises, lançamentos e guias de plataformas. Projeto acadêmico de Front-End.</p>
+        </section>
+        <nav aria-labelledby="rodape-explorar">
+          <h4 id="rodape-explorar">Explorar</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="analises.html">Análises</a></li>
+            <li><a href="lancamentos.html">Lançamentos</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="rodape-mais">
+          <h4 id="rodape-mais">Mais</h4>
+          <ul>
+            <li><a href="plataformas.html">Plataformas</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="rodape-fontes">
+          <h4 id="rodape-fontes">Referências externas</h4>
+          <ul>
+            <li><a href="https://br.ign.com" target="_blank" rel="noopener noreferrer">IGN Brasil ↗</a></li>
+            <li><a href="https://www.gamespot.com" target="_blank" rel="noopener noreferrer">GameSpot ↗</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs ↗</a></li>
+            <li><a href="https://getbootstrap.com" target="_blank" rel="noopener noreferrer">Bootstrap ↗</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="rodape-base">
+        <p>&copy; <span id="ano-atual">2026</span> Checkpoint. Projeto acadêmico de Eduardo Ducca e Marcelo Luz.</p>
+        <p>Ilustrações originais. Conteúdo demonstrativo, sem ligação com as empresas citadas.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="alertas" aria-live="polite" aria-atomic="false"></div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/formulario.js"></script>
+</body>
+</html>

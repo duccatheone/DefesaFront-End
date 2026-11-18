@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Ilustração genérica de Xbox">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f3a2a"/><stop offset="1" stop-color="#78845B"/></linearGradient>
+</defs>
+<rect width="640" height="400" fill="url(#g)"/>
+<circle cx="540" cy="70" r="120" fill="#fff" opacity=".06"/>
+<g transform="translate(120 110)">
+<path d="M60 40 H340 Q400 40 410 110 L430 180 Q440 220 400 226 Q370 228 350 200 L320 160 H80 L50 200 Q30 228 0 226 Q-40 220 -30 180 L-10 110 Q0 40 60 40 Z" fill="#0f172a" stroke="#F2EBDD" stroke-opacity=".5" stroke-width="3"/>
+<rect x="50" y="86" width="14" height="46" rx="3" fill="#F2EBDD" opacity=".85"/>
+<rect x="34" y="102" width="46" height="14" rx="3" fill="#F2EBDD" opacity=".85"/>
+<circle cx="330" cy="86" r="10" fill="#E8A07A"/>
+<circle cx="354" cy="110" r="10" fill="#D96B36"/>
+<circle cx="306" cy="110" r="10" fill="#F2EBDD"/>
+<circle cx="330" cy="134" r="10" fill="#78845B"/>
+<circle cx="130" cy="150" r="22" fill="#242321" opacity=".75"/>
+<circle cx="260" cy="150" r="22" fill="#242321" opacity=".75"/>
+</g>
+<text x="28" y="372" fill="#F2EBDD" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="700">Xbox</text>
+</svg>

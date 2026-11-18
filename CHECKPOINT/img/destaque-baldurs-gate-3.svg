@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Ilustração: Baldur's Gate 3">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b2420"/><stop offset="1" stop-color="#A8461A"/></linearGradient>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242321" stop-opacity="0"/><stop offset="1" stop-color="#242321" stop-opacity=".92"/></linearGradient>
+</defs>
+<rect width="640" height="400" fill="url(#g)"/>
+<path d="M60 400 C20 334.5 70 308.3 60 269 C110 321.4 110 360.7 100 400 Z" fill="#fff" opacity=".18"/><path d="M145 400 C105 318.5 155 285.9 145 237 C195 302.2 195 351.1 185 400 Z" fill="#fff" opacity=".18"/><path d="M230 400 C190 301.0 240 261.4 230 202 C280 281.2 280 340.6 270 400 Z" fill="#fff" opacity=".18"/><path d="M315 400 C275 318.5 325 285.9 315 237 C365 302.2 365 351.1 355 400 Z" fill="#fff" opacity=".18"/><path d="M400 400 C360 304.5 410 266.3 400 209 C450 285.4 450 342.7 440 400 Z" fill="#fff" opacity=".18"/><path d="M485 400 C445 327.0 495 297.8 485 254 C535 312.4 535 356.2 525 400 Z" fill="#fff" opacity=".18"/><path d="M570 400 C530 314.5 580 280.3 570 229 C620 297.4 620 348.7 610 400 Z" fill="#fff" opacity=".18"/>
+
+</svg>

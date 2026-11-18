@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logotipo Checkpoint">
+<rect width="64" height="64" rx="14" fill="#242321"/>
+<path d="M21 14 V52" stroke="#F2EBDD" stroke-width="5" stroke-linecap="round"/>
+<path d="M24 16 L50 25 L24 36 Z" fill="#D96B36"/>
+<circle cx="21" cy="52" r="4" fill="#78845B"/>
+</svg>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--
+  CHECKPOINT - Portal gamer independente
+  Arquivo: sobre.html
+  Descricao: Apresentação do projeto Checkpoint, objetivos, equipe, tecnologias e referências.
+  Autores: Eduardo Ducca e Marcelo Luz
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Apresentação do projeto Checkpoint, objetivos, equipe, tecnologias e referências.">
+  <meta name="theme-color" content="#0B1120">
+  <title>Sobre | Checkpoint</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <a id="ir-ao-conteudo" href="#conteudo">Ir para o conteúdo</a>
+  <header id="topo">
+    <nav class="menu-puro" aria-label="Navegação principal">
+      <div class="conteiner">
+        <a class="marca" href="index.html" aria-label="Checkpoint - página inicial"><img src="img/logo.svg" alt="" width="38" height="38"><span class="marca-texto">CHECK<span>POINT</span></span></a>
+        <button class="menu-botao" id="menu-botao" type="button" aria-expanded="false" aria-controls="menu-colapso" aria-label="Abrir ou fechar o menu">&#9776;</button>
+        <div class="menu-colapso" id="menu-colapso">
+          <ul class="menu-lista">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="analises.html">Análises</a></li>
+          <li><a href="lancamentos.html">Lançamentos</a></li>
+          <li><a href="plataformas.html">Plataformas</a></li>
+          <li><a href="historia.html">História</a></li>
+          <li><a href="favoritos.html">Favoritos <span class="contador contador-favoritos">0</span></a></li>
+          <li><a href="comunidade.html">Comunidade</a></li>
+          <li><a class="ativo" aria-current="page" href="sobre.html">Sobre</a></li>
+          <li><a class="link-externo" href="https://br.ign.com" target="_blank" rel="noopener noreferrer">IGN ↗<span class="somente-leitor"> (abre em nova aba)</span></a></li>
+          <li><a class="link-externo" href="https://www.gamespot.com" target="_blank" rel="noopener noreferrer">GameSpot ↗<span class="somente-leitor"> (abre em nova aba)</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="cabecalho-pagina" aria-labelledby="titulo-pagina">
+      <div class="conteiner">
+        <h1 id="titulo-pagina">Sobre o projeto</h1>
+        <p>Conheça a proposta do Checkpoint, seus objetivos e quem o desenvolveu.</p>
+      </div>
+    </section>
+    <section class="secao" aria-labelledby="titulo-apresentacao">
+      <div class="conteiner">
+        <div class="secao-cabecalho"><h2 id="titulo-apresentacao">Apresentação</h2></div>
+        <p>O Checkpoint é um portal gamer independente, criado como projeto acadêmico de Front-End. Inspirado em portais editoriais de tecnologia e videogames, ele reúne notícias, análises, lançamentos, informações sobre plataformas, história dos games e um espaço para a comunidade.</p>
+        <p>Todo o conteúdo é demonstrativo: as matérias são textos explicativos, os lançamentos futuros são fictícios e as imagens são ilustrações originais. Os jogos citados pertencem aos seus respectivos criadores.</p>
+      </div>
+    </section>
+    <section class="secao secao-alt" aria-labelledby="titulo-objetivos">
+      <div class="conteiner">
+        <div class="secao-cabecalho"><h2 id="titulo-objetivos">Objetivos do portal</h2></div>
+        <ul>
+          <li>Oferecer uma navegação clara entre dez páginas conectadas, em smartphones e desktops.</li>
+          <li>Apresentar informações sobre jogos e plataformas de forma organizada e visualmente agradável.</li>
+          <li>Permitir que o visitante pesquise, filtre, favorite jogos e envie mensagens, com dados salvos no navegador.</li>
+          <li>Aplicar, na prática, HTML, CSS e JavaScript, além do Bootstrap.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="secao" aria-labelledby="titulo-equipe">
+      <div class="conteiner">
+        <div class="secao-cabecalho"><h2 id="titulo-equipe">Equipe</h2></div>
+        <div class="grade grade-2">
+          <article class="membro">
+            <img src="img/equipe-eduardo.svg" alt="Avatar com as iniciais de Eduardo Ducca">
+            <h3>Eduardo Ducca</h3>
+            <p>Integrante da equipe de desenvolvimento</p>
+          </article>
+          <article class="membro">
+            <img src="img/equipe-marcelo.svg" alt="Avatar com as iniciais de Marcelo Luz">
+            <h3>Marcelo Luz</h3>
+            <p>Integrante da equipe de desenvolvimento</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="secao secao-alt" aria-labelledby="titulo-tecnologias">
+      <div class="conteiner">
+        <div class="secao-cabecalho"><h2 id="titulo-tecnologias">Tecnologias utilizadas</h2></div>
+        <ul class="lista-tecnologias">
+          <li><strong>HTML5 semântico</strong>header, nav, main, section, article e footer em todas as páginas.</li>
+          <li><strong>CSS3</strong>Seletores de tag, classe e id; CSS inline, incorporado e externo; Grid e Flexbox.</li>
+          <li><strong>JavaScript puro</strong>Eventos, manipulação do DOM, filtros, validação e localStorage.</li>
+          <li><strong>Bootstrap 5</strong>Navbar, botões, formulários, alertas e cards em 8 das 10 páginas.</li>
+          <li><strong>localStorage</strong>Persistência dos favoritos e das mensagens da comunidade.</li>
+          <li><strong>Git e GitHub</strong>Versionamento e publicação do projeto.</li>
+        </ul>
+        <p style="margin-top: 1rem;">As páginas <strong>História</strong> e <strong>Sobre</strong> foram feitas somente com HTML, CSS e JavaScript puros, sem Bootstrap.</p>
+      </div>
+    </section>
+    <section class="secao" aria-labelledby="titulo-referencias">
+      <div class="conteiner">
+        <div class="secao-cabecalho"><h2 id="titulo-referencias">Referências e inspiração</h2></div>
+        <ul>
+          <li><a href="https://br.ign.com" target="_blank" rel="noopener noreferrer">IGN Brasil</a>: referência de portal editorial sobre games.</li>
+          <li><a href="https://www.gamespot.com" target="_blank" rel="noopener noreferrer">GameSpot</a>: referência de organização de análises e lançamentos.</li>
+          <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>: documentação de HTML, CSS e JavaScript.</li>
+          <li><a href="https://getbootstrap.com" target="_blank" rel="noopener noreferrer">Bootstrap</a>: documentação do framework de interface.</li>
+          <li>TERUEL, E. C. <strong>HTML5: guia prático</strong>. 2. ed. São Paulo: Érica, 2014.</li>
+          <li>KALBACH, J. <strong>Design de navegação web: otimizando a experiência do usuário</strong>. Porto Alegre: Bookman, 2009.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <div class="conteiner">
+      <div class="rodape-grade">
+        <section aria-labelledby="rodape-sobre">
+          <a class="marca" href="index.html"><img src="img/logo.svg" alt="" width="38" height="38"><span class="marca-texto">CHECK<span>POINT</span></span></a>
+          <h4 id="rodape-sobre" class="somente-leitor">Sobre o portal</h4>
+          <p>Portal gamer independente com notícias, análises, lançamentos e guias de plataformas. Projeto acadêmico de Front-End.</p>
+        </section>
+        <nav aria-labelledby="rodape-explorar">
+          <h4 id="rodape-explorar">Explorar</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="analises.html">Análises</a></li>
+            <li><a href="lancamentos.html">Lançamentos</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="rodape-mais">
+          <h4 id="rodape-mais">Mais</h4>
+          <ul>
+            <li><a href="plataformas.html">Plataformas</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="rodape-fontes">
+          <h4 id="rodape-fontes">Referências externas</h4>
+          <ul>
+            <li><a href="https://br.ign.com" target="_blank" rel="noopener noreferrer">IGN Brasil ↗</a></li>
+            <li><a href="https://www.gamespot.com" target="_blank" rel="noopener noreferrer">GameSpot ↗</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs ↗</a></li>
+            <li><a href="https://getbootstrap.com" target="_blank" rel="noopener noreferrer">Bootstrap ↗</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="rodape-base">
+        <p>&copy; <span id="ano-atual">2026</span> Checkpoint. Projeto acadêmico de Eduardo Ducca e Marcelo Luz.</p>
+        <p>Ilustrações originais. Conteúdo demonstrativo, sem ligação com as empresas citadas.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="alertas" aria-live="polite" aria-atomic="false"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

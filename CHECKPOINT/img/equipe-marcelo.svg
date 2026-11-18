@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Avatar de Marcelo">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#78845B"/><stop offset="1" stop-color="#B7C08F"/></linearGradient></defs>
+<rect width="200" height="200" rx="100" fill="url(#g)"/>
+<text x="100" y="124" text-anchor="middle" fill="#242321" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="72" font-weight="700">ML</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Ilustração: Hades">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a1f10"/><stop offset="1" stop-color="#D96B36"/></linearGradient>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242321" stop-opacity="0"/><stop offset="1" stop-color="#242321" stop-opacity=".92"/></linearGradient>
+</defs>
+<rect width="640" height="400" fill="url(#g)"/>
+<path d="M60 400 C20 308.5 70 271.9 60 217 C110 290.2 110 345.1 100 400 Z" fill="#fff" opacity=".18"/><path d="M145 400 C105 343.0 155 320.2 145 286 C195 331.6 195 365.8 185 400 Z" fill="#fff" opacity=".18"/><path d="M230 400 C190 318.0 240 285.2 230 236 C280 301.6 280 350.8 270 400 Z" fill="#fff" opacity=".18"/><path d="M315 400 C275 314.5 325 280.3 315 229 C365 297.4 365 348.7 355 400 Z" fill="#fff" opacity=".18"/><path d="M400 400 C360 308.5 410 271.9 400 217 C450 290.2 450 345.1 440 400 Z" fill="#fff" opacity=".18"/><path d="M485 400 C445 344.5 495 322.3 485 289 C535 333.4 535 366.7 525 400 Z" fill="#fff" opacity=".18"/><path d="M570 400 C530 332.0 580 304.8 570 264 C620 318.4 620 359.2 610 400 Z" fill="#fff" opacity=".18"/>
+<rect y="210" width="640" height="190" fill="url(#s)"/><text x="28" y="338" fill="#F2EBDD" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="36" font-weight="700">Hades</text><text x="28" y="368" fill="#E8A07A" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18">Ação roguelike</text>
+</svg>

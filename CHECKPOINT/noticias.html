@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--
+  CHECKPOINT - Portal gamer independente
+  Arquivo: noticias.html
+  Descricao: Notícias e matérias explicativas sobre indústria, tecnologia, lançamentos e atualizações dos games.
+  Autores: Eduardo Ducca e Marcelo Luz
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Notícias e matérias explicativas sobre indústria, tecnologia, lançamentos e atualizações dos games.">
+  <meta name="theme-color" content="#0B1120">
+  <title>Notícias | Checkpoint</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <a id="ir-ao-conteudo" href="#conteudo">Ir para o conteúdo</a>
+  <header id="topo">
+    <nav class="navbar navbar-expand-xl nx-nav" aria-label="Navegação principal">
+      <div class="conteiner">
+        <a class="navbar-brand marca" href="index.html" aria-label="Checkpoint - página inicial"><img src="img/logo.svg" alt="" width="38" height="38"><span class="marca-texto">CHECK<span>POINT</span></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir ou fechar o menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="noticias.html">Notícias</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="analises.html">Análises</a></li>
+          <li class="nav-item"><a class="nav-link" href="lancamentos.html">Lançamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="plataformas.html">Plataformas</a></li>
+          <li class="nav-item"><a class="nav-link" href="historia.html">História</a></li>
+          <li class="nav-item"><a class="nav-link" href="favoritos.html">Favoritos <span class="contador contador-favoritos">0</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="comunidade.html">Comunidade</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link link-externo" href="https://br.ign.com" target="_blank" rel="noopener noreferrer">IGN ↗<span class="visually-hidden"> (abre em nova aba)</span></a></li>
+          <li class="nav-item"><a class="nav-link link-externo" href="https://www.gamespot.com" target="_blank" rel="noopener noreferrer">GameSpot ↗<span class="visually-hidden"> (abre em nova aba)</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="cabecalho-pagina" aria-labelledby="titulo-pagina">
+      <div class="conteiner">
+        <h1 id="titulo-pagina">Notícias</h1>
+        <p>Matérias sobre indústria, tecnologia, lançamentos e atualizações do universo dos games.</p>
+      </div>
+    </section>
+    <section class="secao" aria-label="Lista de notícias">
+      <div class="conteiner">
+        <p class="aviso-demo"><strong>Conteúdo demonstrativo.</strong> As matérias abaixo são textos explicativos criados para este projeto acadêmico e não relatam acontecimentos reais. As datas são ilustrativas.</p>
+        <div class="abas-categoria" role="group" aria-label="Filtrar por categoria">
+          <button class="aba ativa" type="button" data-categoria="todas" aria-pressed="true">Todas</button>
+          <button class="aba" type="button" data-categoria="Indústria" aria-pressed="false">Indústria</button>
+          <button class="aba" type="button" data-categoria="Tecnologia" aria-pressed="false">Tecnologia</button>
+          <button class="aba" type="button" data-categoria="Lançamentos" aria-pressed="false">Lançamentos</button>
+          <button class="aba" type="button" data-categoria="Atualizações" aria-pressed="false">Atualizações</button>
+        </div>
+        <p class="contagem-resultados" id="contagem-noticias" aria-live="polite">8 matérias exibidas</p>
+        <div class="noticia-lista">
+          <article class="cartao card" id="ciclo-de-vida-console" data-categoria="Indústria">
+            <img class="card-img-top" src="img/noticia-industria.svg" alt="Ilustração da categoria Indústria" loading="lazy">
+            <div class="cartao-corpo card-body">
+              <div class="cartao-meta"><span class="selo">Indústria</span><time datetime="2026-11-14">14 nov 2026</time></div>
+              <h2 class="card-title" style="font-size: 1.08rem;">Como funciona o ciclo de vida de um console</h2>
+              <p class="card-text">Do lançamento ao fim do suporte: entenda as fases que um console atravessa e por que as gerações costumam durar entre cinco e oito anos.</p>
+              <div class="detalhes"><p>Um console costuma passar por quatro fases: lançamento, consolidação, maturidade e transição. No início, o catálogo é pequeno e os estúdios ainda aprendem a explorar o hardware. Com o tempo, o preço tende a cair, surgem revisões do aparelho e os jogos aproveitam melhor os recursos da máquina. Perto do fim, o suporte diminui e a próxima geração começa a ser apresentada.</p></div>
+              <div class="cartao-acoes"><button class="btn-detalhes" type="button" aria-expanded="false">Ver detalhes</button></div>
+            </div>
+          </article>
+          <article class="cartao card" id="taxa-de-quadros" data-categoria="Tecnologia">
+            <img class="card-img-top" src="img/noticia-tecnologia.svg" alt="Ilustração da categoria Tecnologia" loading="lazy">
+            <div class="cartao-corpo card-body">
+              <div class="cartao-meta"><span class="selo">Tecnologia</span><time datetime="2026-11-12">12 nov 2026</time></div>
+              <h2 class="card-title" style="font-size: 1.08rem;">30, 60 ou 120 FPS: o que a taxa de quadros muda no jogo</h2>
+              <p class="card-text">Mais quadros por segundo deixam a imagem mais fluida e o controle mais responsivo, mas exigem mais do hardware. Veja quando vale a pena priorizar cada opção.</p>
+              <div class="detalhes"><p>A taxa de quadros indica quantas imagens são exibidas por segundo. Com 30 FPS o movimento é aceitável para jogos contemplativos; com 60 FPS a resposta dos comandos melhora de forma perceptível; 120 FPS beneficia sobretudo jogos competitivos e telas compatíveis. Muitos títulos oferecem modos que trocam resolução por fluidez, e a melhor escolha depende do gênero e da sua tela.</p></div>
+              <div class="cartao-acoes"><button class="btn-detalhes" type="button" aria-expanded="false">Ver detalhes</button></div>
+            </div>
+          </article>
+          <article class="cartao card" id="calendario-de-lancamentos" data-categoria="Lançamentos">
+            <img class="card-img-top" src="img/noticia-lancamentos.svg" alt="Ilustração da categoria Lançamentos" loading="lazy">
+            <div class="cartao-corpo card-body">
+              <div class="cartao-meta"><span class="selo">Lançamentos</span><time datetime="2026-11-10">10 nov 2026</time></div>
+              <h2 class="card-title" style="font-size: 1.08rem;">Como ler um calendário de lançamentos sem cair em armadilhas</h2>
+              <p class="card-text">Datas mudam, jogos são adiados e plataformas variam. Aprenda a conferir fontes oficiais e a diferenciar anúncio, previsão e lançamento confirmado.</p>
+              <div class="detalhes"><p>Anúncio não é data: um jogo pode ser apresentado anos antes de chegar às lojas. Prefira páginas oficiais dos estúdios e das lojas, desconfie de datas sem fonte e lembre que adiamentos são comuns. Confira também em quais plataformas o jogo sai no primeiro dia, pois algumas versões chegam depois.</p></div>
+              <div class="cartao-acoes"><button class="btn-detalhes" type="button" aria-expanded="false">Ver detalhes</button></div>
+            </div>
+          </article>
+          <article class="cartao card" id="patch-de-dia-um" data-categoria="Atualizações">
+            <img class="card-img-top" src="img/noticia-atualizacoes.svg" alt="Ilustração da categoria Atualizações" loading="lazy">
+            <div class="cartao-corpo card-body">
+              <div class="cartao-meta"><span class="selo">Atualizações</span><time datetime="2026-11-08">8 nov 2026</time></div>
+              <h2 class="card-title" style="font-size: 1.08rem;">O que é um patch de dia um e por que ele existe</h2>
+              <p class="card-text">Muitos jogos recebem uma atualização no dia do lançamento. Entenda o motivo, o que costuma ser corrigido e como isso afeta o tamanho do download.</p>
+              <div class="detalhes"><p>O patch de dia um é uma atualização distribuída no lançamento. Como o jogo é finalizado e enviado para distribuição semanas antes, a equipe continua corrigindo erros nesse intervalo. Por isso, mesmo em mídia física, pode ser necessário baixar arquivos adicionais antes de jogar.</p></div>
+              <div class="cartao-acoes"><button class="btn-detalhes" type="button" aria-expanded="false">Ver detalhes</button></div>
+            </div>
+          </article>
+          <article class="cartao card" id="primeiro-pc-gamer" data-categoria="Tecnologia">
+            <img class="card-img-top" src="img/noticia-guia.svg" alt="Ilustração da categoria Tecnologia" loading="lazy">
+            <div class="cartao-corpo card-body">
+              <div class="cartao-meta"><span class="selo">Tecnologia</span><time datetime="2026-11-05">5 nov 2026</time></div>
+              <h2 class="card-title" style="font-size: 1.08rem;">Primeiro PC gamer: o que priorizar no orçamento</h2>
+              <p class="card-text">Placa de vídeo, processador, memória e armazenamento: um guia para distribuir bem o investimento e evitar gargalos que travam o desempenho.</p>
+              <div class="detalhes"><p>A placa de vídeo é a peça que mais influencia o desempenho em jogos, por isso costuma receber a maior parte do orçamento. Em seguida vêm um processador equilibrado, memória suficiente (16 GB é um ponto de partida comum) e um SSD para reduzir os tempos de carregamento. Evite desequilibrar o conjunto: uma peça muito fraca limita as demais.</p></div>
+              <div class="cartao-acoes"><button class="btn-detalhes" type="button" aria-expanded="false">Ver detalhes</button></div>
+            </div>
+          </article>
+          <article class="cartao card" id="indies-para-comecar" data-categoria="Indústria">
+            <img class="card-img-top" src="img/noticia-comunidade.svg" alt="Ilustração da categoria Indústria" loading="lazy">
+            <div class="cartao-corpo card-body">
+              <div class="cartao-meta"><span class="selo">Indústria</span><time datetime="2026-11-02">2 nov 2026</time></div>
+              <h2 class="card-title" style="font-size: 1.08rem;">Por que os jogos independentes ganharam tanto espaço</h2>
+              <p class="card-text">Equipes pequenas, distribuição digital e ideias ousadas mudaram o mercado. Títulos como Celeste, Hades e Stardew Valley ajudam a entender o fenômeno.</p>
+              <div class="detalhes"><p>Estúdios pequenos ganharam espaço com a distribuição digital, que dispensa grandes editoras para chegar ao público. Jogos como Celeste, Hades e Stardew Valley mostram que ideias claras e acabamento cuidadoso podem competir em qualidade com produções de grande orçamento.</p></div>
+              <div class="cartao-acoes"><button class="btn-detalhes" type="button" aria-expanded="false">Ver detalhes</button></div>
+            </div>
+          </article>
+          <article class="cartao card" id="acesso-antecipado" data-categoria="Lançamentos">
+            <img class="card-img-top" src="img/noticia-guia.svg" alt="Ilustração da categoria Lançamentos" loading="lazy">
+            <div class="cartao-corpo card-body">
+              <div class="cartao-meta"><span class="selo">Lançamentos</span><time datetime="2026-10-30">30 out 2026</time></div>
+              <h2 class="card-title" style="font-size: 1.08rem;">Acesso antecipado: vantagens e riscos de jogar antes do fim</h2>
+              <p class="card-text">Jogar antes do lançamento completo ajuda estúdios a receber opiniões, mas o jogo pode mudar muito. Veja o que avaliar antes de comprar.</p>
+              <div class="detalhes"><p>No acesso antecipado, o jogo é vendido enquanto ainda está em desenvolvimento. A vantagem é acompanhar a evolução e, muitas vezes, pagar menos; Hades, por exemplo, passou por essa fase antes da versão final. O risco é encontrar pouco conteúdo, erros frequentes ou um projeto que não chega ao fim. Leia as avaliações recentes e o plano de desenvolvimento antes de comprar.</p></div>
+              <div class="cartao-acoes"><button class="btn-detalhes" type="button" aria-expanded="false">Ver detalhes</button></div>
+            </div>
+          </article>
+          <article class="cartao card" id="atualizacoes-de-jogos-online" data-categoria="Atualizações">
+            <img class="card-img-top" src="img/noticia-atualizacoes.svg" alt="Ilustração da categoria Atualizações" loading="lazy">
+            <div class="cartao-corpo card-body">
+              <div class="cartao-meta"><span class="selo">Atualizações</span><time datetime="2026-10-28">28 out 2026</time></div>
+              <h2 class="card-title" style="font-size: 1.08rem;">Como os jogos online se renovam com temporadas e balanceamentos</h2>
+              <p class="card-text">Temporadas, ajustes de equilíbrio e novos modos mantêm um jogo vivo por anos. Entenda como essas atualizações costumam funcionar.</p>
+              <div class="detalhes"><p>Jogos online costumam ser divididos em temporadas, cada uma com novidades como mapas, modos ou itens. Entre elas, as equipes publicam ajustes de equilíbrio para corrigir personagens ou armas que ficaram fortes ou fracas demais. Esse ciclo mantém a comunidade ativa, mas exige que o jogador acompanhe as notas de atualização.</p></div>
+              <div class="cartao-acoes"><button class="btn-detalhes" type="button" aria-expanded="false">Ver detalhes</button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <div class="conteiner">
+      <div class="rodape-grade">
+        <section aria-labelledby="rodape-sobre">
+          <a class="marca" href="index.html"><img src="img/logo.svg" alt="" width="38" height="38"><span class="marca-texto">CHECK<span>POINT</span></span></a>
+          <h4 id="rodape-sobre" class="somente-leitor">Sobre o portal</h4>
+          <p>Portal gamer independente com notícias, análises, lançamentos e guias de plataformas. Projeto acadêmico de Front-End.</p>
+        </section>
+        <nav aria-labelledby="rodape-explorar">
+          <h4 id="rodape-explorar">Explorar</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="analises.html">Análises</a></li>
+            <li><a href="lancamentos.html">Lançamentos</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="rodape-mais">
+          <h4 id="rodape-mais">Mais</h4>
+          <ul>
+            <li><a href="plataformas.html">Plataformas</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="rodape-fontes">
+          <h4 id="rodape-fontes">Referências externas</h4>
+          <ul>
+            <li><a href="https://br.ign.com" target="_blank" rel="noopener noreferrer">IGN Brasil ↗</a></li>
+            <li><a href="https://www.gamespot.com" target="_blank" rel="noopener noreferrer">GameSpot ↗</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs ↗</a></li>
+            <li><a href="https://getbootstrap.com" target="_blank" rel="noopener noreferrer">Bootstrap ↗</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="rodape-base">
+        <p>&copy; <span id="ano-atual">2026</span> Checkpoint. Projeto acadêmico de Eduardo Ducca e Marcelo Luz.</p>
+        <p>Ilustrações originais. Conteúdo demonstrativo, sem ligação com as empresas citadas.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="alertas" aria-live="polite" aria-atomic="false"></div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+  CHECKPOINT - Portal gamer independente
+  Arquivo: favoritos.html
+  Descricao: Lista de jogos favoritos salva no navegador com localStorage.
+  Autores: Eduardo Ducca e Marcelo Luz
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lista de jogos favoritos salva no navegador com localStorage.">
+  <meta name="theme-color" content="#0B1120">
+  <title>Favoritos | Checkpoint</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <a id="ir-ao-conteudo" href="#conteudo">Ir para o conteúdo</a>
+  <header id="topo">
+    <nav class="navbar navbar-expand-xl nx-nav" aria-label="Navegação principal">
+      <div class="conteiner">
+        <a class="navbar-brand marca" href="index.html" aria-label="Checkpoint - página inicial"><img src="img/logo.svg" alt="" width="38" height="38"><span class="marca-texto">CHECK<span>POINT</span></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir ou fechar o menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="analises.html">Análises</a></li>
+          <li class="nav-item"><a class="nav-link" href="lancamentos.html">Lançamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="plataformas.html">Plataformas</a></li>
+          <li class="nav-item"><a class="nav-link" href="historia.html">História</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="favoritos.html">Favoritos <span class="contador contador-favoritos">0</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="comunidade.html">Comunidade</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link link-externo" href="https://br.ign.com" target="_blank" rel="noopener noreferrer">IGN ↗<span class="visually-hidden"> (abre em nova aba)</span></a></li>
+          <li class="nav-item"><a class="nav-link link-externo" href="https://www.gamespot.com" target="_blank" rel="noopener noreferrer">GameSpot ↗<span class="visually-hidden"> (abre em nova aba)</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="cabecalho-pagina" aria-labelledby="titulo-pagina">
+      <div class="conteiner">
+        <h1 id="titulo-pagina">Favoritos</h1>
+        <p>Seus jogos preferidos ficam salvos neste navegador, mesmo depois de fechar a página.</p>
+      </div>
+    </section>
+    <section class="secao" aria-label="Lista de favoritos">
+      <div class="conteiner">
+        <div class="barra-filtros" id="painel-controles" hidden>
+          <div>
+            <label class="form-label" for="ordenar-favoritos">Ordenar por</label>
+            <select class="form-select" id="ordenar-favoritos">
+              <option value="adicao">Ordem em que foram adicionados</option>
+              <option value="nome">Nome (A a Z)</option>
+              <option value="nota">Maior nota</option>
+              <option value="ano">Mais recentes</option>
+            </select>
+          </div>
+          <div>
+            <button class="btn btn-outline-info" type="button" id="remover-todos">Remover todos</button>
+          </div>
+        </div>
+        <p class="contagem-resultados" id="contagem-favoritos" aria-live="polite"></p>
+        <div class="grade grade-auto" id="lista-favoritos"></div>
+        <div class="estado-vazio" id="sem-favoritos" hidden>
+          <h2>Você ainda não tem jogos favoritos</h2>
+          <p>Explore o catálogo e toque em “Favoritar” nos jogos que mais gostar. Eles aparecerão aqui.</p>
+          <a class="btn btn-primary" href="catalogo.html">Ir para o catálogo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <div class="conteiner">
+      <div class="rodape-grade">
+        <section aria-labelledby="rodape-sobre">
+          <a class="marca" href="index.html"><img src="img/logo.svg" alt="" width="38" height="38"><span class="marca-texto">CHECK<span>POINT</span></span></a>
+          <h4 id="rodape-sobre" class="somente-leitor">Sobre o portal</h4>
+          <p>Portal gamer independente com notícias, análises, lançamentos e guias de plataformas. Projeto acadêmico de Front-End.</p>
+        </section>
+        <nav aria-labelledby="rodape-explorar">
+          <h4 id="rodape-explorar">Explorar</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="analises.html">Análises</a></li>
+            <li><a href="lancamentos.html">Lançamentos</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="rodape-mais">
+          <h4 id="rodape-mais">Mais</h4>
+          <ul>
+            <li><a href="plataformas.html">Plataformas</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="rodape-fontes">
+          <h4 id="rodape-fontes">Referências externas</h4>
+          <ul>
+            <li><a href="https://br.ign.com" target="_blank" rel="noopener noreferrer">IGN Brasil ↗</a></li>
+            <li><a href="https://www.gamespot.com" target="_blank" rel="noopener noreferrer">GameSpot ↗</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs ↗</a></li>
+            <li><a href="https://getbootstrap.com" target="_blank" rel="noopener noreferrer">Bootstrap ↗</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="rodape-base">
+        <p>&copy; <span id="ano-atual">2026</span> Checkpoint. Projeto acadêmico de Eduardo Ducca e Marcelo Luz.</p>
+        <p>Ilustrações originais. Conteúdo demonstrativo, sem ligação com as empresas citadas.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="alertas" aria-live="polite" aria-atomic="false"></div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/favoritos.js"></script>
+</body>
+</html>

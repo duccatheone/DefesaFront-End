@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Ilustração da época: Anos 1970">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#242321"/><stop offset="1" stop-color="#4a4741"/></linearGradient></defs>
+<rect width="640" height="400" fill="url(#g)"/>
+<rect x="60" y="120" width="12" height="90" fill="#F2EBDD"/><rect x="568" y="170" width="12" height="90" fill="#F2EBDD"/><rect x="310" y="180" width="16" height="16" fill="#E8A07A"/><path d="M320 40 V360" stroke="#F2EBDD" stroke-dasharray="14 12" stroke-width="4" opacity=".5"/>
+<text x="28" y="378" fill="#F2EBDD" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Anos 1970</text>
+</svg>

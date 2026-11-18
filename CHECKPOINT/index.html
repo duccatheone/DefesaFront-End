@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--
+  CHECKPOINT - Portal gamer independente
+  Arquivo: index.html
+  Descricao: Checkpoint: notícias, análises, lançamentos e guias do universo dos videogames.
+  Autores: Eduardo Ducca e Marcelo Luz
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Checkpoint: notícias, análises, lançamentos e guias do universo dos videogames.">
+  <meta name="theme-color" content="#0B1120">
+  <title>Home | Checkpoint</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+  <style>
+    #recomendados .secao-cabecalho h2 {
+      border-left-color: var(--oliva);
+    }
+  </style>
+</head>
+<body>
+  <a id="ir-ao-conteudo" href="#conteudo">Ir para o conteúdo</a>
+  <header id="topo">
+    <nav class="navbar navbar-expand-xl nx-nav" aria-label="Navegação principal">
+      <div class="conteiner">
+        <a class="navbar-brand marca" href="index.html" aria-label="Checkpoint - página inicial"><img src="img/logo.svg" alt="" width="38" height="38"><span class="marca-texto">CHECK<span>POINT</span></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir ou fechar o menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="analises.html">Análises</a></li>
+          <li class="nav-item"><a class="nav-link" href="lancamentos.html">Lançamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="plataformas.html">Plataformas</a></li>
+          <li class="nav-item"><a class="nav-link" href="historia.html">História</a></li>
+          <li class="nav-item"><a class="nav-link" href="favoritos.html">Favoritos <span class="contador contador-favoritos">0</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="comunidade.html">Comunidade</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link link-externo" href="https://br.ign.com" target="_blank" rel="noopener noreferrer">IGN ↗<span class="visually-hidden"> (abre em nova aba)</span></a></li>
+          <li class="nav-item"><a class="nav-link link-externo" href="https://www.gamespot.com" target="_blank" rel="noopener noreferrer">GameSpot ↗<span class="visually-hidden"> (abre em nova aba)</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="conteiner">
+        <h1 id="titulo-hero">O universo dos games em um só lugar.</h1>
+        <p style="max-width: 58ch;">Notícias, análises, lançamentos e guias de plataformas para quem joga no PC, PlayStation, Xbox e Nintendo.</p>
+        <div class="hero-acoes">
+          <a class="btn btn-primary btn-lg" href="catalogo.html">Explorar o catálogo</a>
+          <a class="btn btn-outline-info btn-lg" href="analises.html">Ler análises</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-destaques">
+      <div class="conteiner">
+        <div class="secao-cabecalho"><h2 id="titulo-destaques">Em destaque</h2></div>
+        <div class="destaques">
+          <article class="destaque-principal">
+            <img src="img/destaque-baldurs-gate-3.svg" alt="Ilustração em tons de roxo e vermelho inspirada em Baldur's Gate 3">
+            <div class="destaque-texto">
+              <div class="selos"><span class="selo">RPG</span><span class="selo selo-laranja">Análise</span></div>
+              <h2>Baldur's Gate 3: liberdade para escrever a própria história</h2>
+              <p>Decisões que mudam o rumo da aventura e um sistema por turnos que recompensa a criatividade.</p>
+              <a class="btn btn-primary" href="analises.html#baldurs-gate-3">Ler a análise</a>
+            </div>
+          </article>
+          <div class="destaques-laterais">
+            <a class="destaque-mini" href="analises.html#elden-ring">
+              <img src="img/elden-ring.svg" alt="Ilustração de capa de Elden Ring">
+              <div><h3>Elden Ring</h3><p>Um mundo aberto que desafia e recompensa a curiosidade.</p></div>
+            </a>
+            <a class="destaque-mini" href="analises.html#hades">
+              <img src="img/hades.svg" alt="Ilustração de capa de Hades">
+              <div><h3>Hades</h3><p>Cada fuga fracassada faz a história avançar.</p></div>
+            </a>
+            <a class="destaque-mini" href="analises.html#stardew-valley">
+              <img src="img/stardew-valley.svg" alt="Ilustração de capa de Stardew Valley">
+              <div><h3>Stardew Valley</h3><p>Uma vida tranquila no campo, no seu ritmo.</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-alt" aria-labelledby="titulo-noticias">
+      <div class="conteiner">
+        <div class="secao-cabecalho">
+          <h2 id="titulo-noticias">Notícias recentes</h2>
+          <a href="noticias.html">Ver todas as notícias</a>
+        </div>
+        <p class="aviso-demo"><strong>Conteúdo demonstrativo.</strong> As matérias deste portal são textos explicativos criados para o projeto e não relatam fatos reais.</p>
+        <div class="grade grade-3">
+          <article class="cartao card">
+            <a href="noticias.html#ciclo-de-vida-console"><img class="card-img-top" src="img/noticia-industria.svg" alt="Ilustração da categoria Indústria" loading="lazy"></a>
+            <div class="cartao-corpo card-body">
+              <div class="cartao-meta"><span class="selo">Indústria</span><time datetime="2026-11-14">14 nov 2026</time></div>
+              <h3 class="card-title"><a href="noticias.html#ciclo-de-vida-console">Como funciona o ciclo de vida de um console</a></h3>
+              <p class="card-text">Do lançamento ao fim do suporte: entenda as fases que um console atravessa e por que as gerações costumam durar entre cinco e oito anos.</p>
+              <div class="cartao-acoes"><a class="btn btn-sm btn-outline-info" href="noticias.html#ciclo-de-vida-console">Ler matéria</a></div>
+            </div>
+          </article>
+          <article class="cartao card">
+            <a href="noticias.html#taxa-de-quadros"><img class="card-img-top" src="img/noticia-tecnologia.svg" alt="Ilustração da categoria Tecnologia" loading="lazy"></a>
+            <div class="cartao-corpo card-body">
+              <div class="cartao-meta"><span class="selo">Tecnologia</span><time datetime="2026-11-12">12 nov 2026</time></div>
+              <h3 class="card-title"><a href="noticias.html#taxa-de-quadros">30, 60 ou 120 FPS: o que a taxa de quadros muda no jogo</a></h3>
+              <p class="card-text">Mais quadros por segundo deixam a imagem mais fluida e o controle mais responsivo, mas exigem mais do hardware. Veja quando vale a pena priorizar cada opção.</p>
+              <div class="cartao-acoes"><a class="btn btn-sm btn-outline-info" href="noticias.html#taxa-de-quadros">Ler matéria</a></div>
+            </div>
+          </article>
+          <article class="cartao card">
+            <a href="noticias.html#calendario-de-lancamentos"><img class="card-img-top" src="img/noticia-lancamentos.svg" alt="Ilustração da categoria Lançamentos" loading="lazy"></a>
+            <div class="cartao-corpo card-body">
+              <div class="cartao-meta"><span class="selo">Lançamentos</span><time datetime="2026-11-10">10 nov 2026</time></div>
+              <h3 class="card-title"><a href="noticias.html#calendario-de-lancamentos">Como ler um calendário de lançamentos sem cair em armadilhas</a></h3>
+              <p class="card-text">Datas mudam, jogos são adiados e plataformas variam. Aprenda a conferir fontes oficiais e a diferenciar anúncio, previsão e lançamento confirmado.</p>
+              <div class="cartao-acoes"><a class="btn btn-sm btn-outline-info" href="noticias.html#calendario-de-lancamentos">Ler matéria</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-populares">
+      <div class="conteiner">
+        <div class="secao-cabecalho">
+          <h2 id="titulo-populares">Jogos populares</h2>
+          <a href="catalogo.html">Ver catálogo completo</a>
+        </div>
+        <div class="grade grade-4" id="jogos-populares"></div>
+      </div>
+    </section>
+
+    <section class="secao secao-alt" aria-labelledby="titulo-lancamentos">
+      <div class="conteiner">
+        <div class="secao-cabecalho">
+          <h2 id="titulo-lancamentos">Próximos lançamentos</h2>
+          <a href="lancamentos.html">Abrir calendário</a>
+        </div>
+        <p class="aviso-demo"><strong>Títulos fictícios.</strong> Os lançamentos futuros abaixo são exemplos criados para demonstração e não correspondem a jogos reais.</p>
+        <div class="calendario" id="proximos-lancamentos"></div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-midia">
+      <div class="conteiner">
+        <div class="secao-cabecalho"><h2 id="titulo-midia">Mídia do portal</h2></div>
+        <div class="grade grade-2">
+          <article class="midia-bloco">
+            <h3>Vinheta de abertura</h3>
+            <video controls preload="metadata" poster="img/hero.svg">
+              <source src="video/abertura-checkpoint.mp4" type="video/mp4">
+              Seu navegador não suporta a reprodução de vídeo.
+            </video>
+          </article>
+          <article class="midia-bloco">
+            <h3>Trilha original do portal</h3>
+            <p>Melodia sintetizada especialmente para o projeto, sem uso de material protegido.</p>
+            <audio controls preload="metadata">
+              <source src="audio/trilha-checkpoint.mp3" type="audio/mpeg">
+              Seu navegador não suporta a reprodução de áudio.
+            </audio>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-alt" id="recomendados" aria-labelledby="titulo-recomendados">
+      <div class="conteiner">
+        <div class="secao-cabecalho"><h2 id="titulo-recomendados">Conteúdos recomendados</h2></div>
+        <div class="grade grade-4" id="sugestao-dia">
+          <article class="cartao card">
+            <a href="plataformas.html"><img class="card-img-top" src="img/plataforma-pc.svg" alt="Ilustração de um computador gamer" loading="lazy"></a>
+            <div class="cartao-corpo card-body">
+              <h3 class="card-title">Qual plataforma escolher?</h3>
+              <p class="card-text">Compare PC, PlayStation, Xbox e Nintendo lado a lado.</p>
+              <div class="cartao-acoes"><a class="btn btn-sm btn-outline-info" href="plataformas.html">Comparar</a></div>
+            </div>
+          </article>
+          <article class="cartao card">
+            <a href="historia.html"><img class="card-img-top" src="img/era-1980.svg" alt="Ilustração em estilo pixel dos anos 1980" loading="lazy"></a>
+            <div class="cartao-corpo card-body">
+              <h3 class="card-title">A história dos videogames</h3>
+              <p class="card-text">Da primeira geração de consoles ao mundo digital de hoje.</p>
+              <div class="cartao-acoes"><a class="btn btn-sm btn-outline-info" href="historia.html">Ver linha do tempo</a></div>
+            </div>
+          </article>
+          <article class="cartao card">
+            <a href="comunidade.html"><img class="card-img-top" src="img/noticia-comunidade.svg" alt="Ilustração da categoria Comunidade" loading="lazy"></a>
+            <div class="cartao-corpo card-body">
+              <h3 class="card-title">Sugira um jogo</h3>
+              <p class="card-text">Envie recomendações e opiniões para a comunidade do portal.</p>
+              <div class="cartao-acoes"><a class="btn btn-sm btn-outline-info" href="comunidade.html">Participar</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <div class="conteiner">
+      <div class="rodape-grade">
+        <section aria-labelledby="rodape-sobre">
+          <a class="marca" href="index.html"><img src="img/logo.svg" alt="" width="38" height="38"><span class="marca-texto">CHECK<span>POINT</span></span></a>
+          <h4 id="rodape-sobre" class="somente-leitor">Sobre o portal</h4>
+          <p>Portal gamer independente com notícias, análises, lançamentos e guias de plataformas. Projeto acadêmico de Front-End.</p>
+        </section>
+        <nav aria-labelledby="rodape-explorar">
+          <h4 id="rodape-explorar">Explorar</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="analises.html">Análises</a></li>
+            <li><a href="lancamentos.html">Lançamentos</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="rodape-mais">
+          <h4 id="rodape-mais">Mais</h4>
+          <ul>
+            <li><a href="plataformas.html">Plataformas</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="rodape-fontes">
+          <h4 id="rodape-fontes">Referências externas</h4>
+          <ul>
+            <li><a href="https://br.ign.com" target="_blank" rel="noopener noreferrer">IGN Brasil ↗</a></li>
+            <li><a href="https://www.gamespot.com" target="_blank" rel="noopener noreferrer">GameSpot ↗</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs ↗</a></li>
+            <li><a href="https://getbootstrap.com" target="_blank" rel="noopener noreferrer">Bootstrap ↗</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="rodape-base">
+        <p>&copy; <span id="ano-atual">2026</span> Checkpoint. Projeto acadêmico de Eduardo Ducca e Marcelo Luz.</p>
+        <p>Ilustrações originais. Conteúdo demonstrativo, sem ligação com as empresas citadas.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="alertas" aria-live="polite" aria-atomic="false"></div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

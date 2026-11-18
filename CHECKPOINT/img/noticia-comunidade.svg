@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Ilustração da categoria Comunidade">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8f3f17"/><stop offset="1" stop-color="#E8A07A"/></linearGradient></defs>
+<rect width="640" height="400" fill="url(#g)"/>
+<ellipse cx="220" cy="190" rx="52" ry="96" fill="none" stroke="#fff" stroke-width="12" opacity=".45"/><ellipse cx="440" cy="190" rx="52" ry="96" fill="none" stroke="#000" stroke-width="12" opacity=".4"/><path d="M272 190 H388" stroke="#fff" stroke-width="4" stroke-dasharray="10 8" opacity=".5"/>
+<rect x="24" y="24" width="150" height="38" rx="8" fill="#242321" opacity=".8"/>
+<text x="40" y="49" fill="#E8A07A" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700">Comunidade</text>
+</svg>

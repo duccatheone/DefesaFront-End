@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="Ilustração do portal Checkpoint">
+<rect width="1200" height="560" fill="#E8DFCB"/>
+<g fill="none" stroke="#D96B36" opacity=".45" stroke-width="3">
+<circle cx="930" cy="240" r="200"/><circle cx="930" cy="240" r="140"/><circle cx="930" cy="240" r="80"/>
+</g>
+<g fill="#78845B" opacity=".55"><rect x="640" y="400" width="64" height="64" rx="10"/><rect x="722" y="436" width="40" height="40" rx="8"/><rect x="1040" y="70" width="52" height="52" rx="10"/></g>
+<path d="M930 40 V440" stroke="#242321" stroke-width="6" opacity=".25"/>
+<path d="M934 50 L1040 90 L934 140 Z" fill="#D96B36" opacity=".8"/>
+<path d="M0 560 L0 470 L180 410 L360 470 L540 400 L720 480 L900 420 L1200 500 V560 Z" fill="#242321" opacity=".85"/>
+</svg>

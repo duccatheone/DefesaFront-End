@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Ilustração: Zelda: Breath of the Wild">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3d4a2c"/><stop offset="1" stop-color="#78845B"/></linearGradient>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242321" stop-opacity="0"/><stop offset="1" stop-color="#242321" stop-opacity=".92"/></linearGradient>
+</defs>
+<rect width="640" height="400" fill="url(#g)"/>
+<circle cx="480" cy="110" r="46" fill="#fff" opacity=".35"/><polygon points="0,400 0,211 90,189 180,220 270,253 360,176 450,179 540,275 630,238 640,400" fill="#000" opacity=".28"/><polygon points="0,400 0,300 130,230 260,310 390,250 520,320 640,270 640,400" fill="#000" opacity=".35"/>
+<rect y="210" width="640" height="190" fill="url(#s)"/><text x="28" y="338" fill="#F2EBDD" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="36" font-weight="700">Zelda: Breath of the Wild</text><text x="28" y="368" fill="#E8A07A" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18">Aventura em mundo aberto</text>
+</svg>

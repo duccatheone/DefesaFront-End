@@ -1,0 +1,296 @@
+/*
+  CHECKPOINT - Portal gamer independente
+  Arquivo: css/responsivo.css
+  Descricao: adaptacao da interface para smartphone (base), tablet e desktop.
+  Larguras de referencia do croqui: 480px, 729px e 990px; 1200px para o menu completo.
+  Autores: Eduardo Ducca e Marcelo Luz
+*/
+
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .grade-auto {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .barra-filtros {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .barra-filtros .campo-busca {
+    grid-column: 1 / -1;
+  }
+
+  .pros-contras {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #alertas {
+    left: auto;
+    width: 360px;
+  }
+
+  .rodape-grade {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 729px) {
+  .conteiner {
+    padding: 0 1.5rem;
+  }
+
+  .secao {
+    padding: 3.2rem 0;
+  }
+
+  .hero {
+    padding: 4.5rem 0 3rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .destaques-laterais {
+    grid-template-columns: repeat(3, 1fr);
+    order: -1;
+  }
+
+  .destaques-laterais .destaque-mini {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .destaques-laterais .destaque-mini img {
+    width: 100%;
+    height: 110px;
+  }
+
+  .destaque-principal {
+    min-height: 400px;
+  }
+
+  .grade-auto {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .grade-2,
+  .grade-3,
+  .grade-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .noticia-lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .calendario {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .barra-filtros {
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: end;
+  }
+
+  .barra-filtros .campo-busca {
+    grid-column: auto;
+  }
+
+  .analise {
+    grid-template-columns: 280px 1fr;
+    padding: 1.25rem;
+  }
+
+  .plataforma-bloco {
+    flex-direction: row;
+    align-items: center;
+    padding: 1.25rem;
+  }
+
+  .plataforma-bloco img {
+    width: 40%;
+    flex-shrink: 0;
+  }
+
+  .plataforma-bloco:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  .marco {
+    grid-template-columns: 260px 1fr;
+    padding: 1.25rem;
+  }
+
+  .linha-tempo {
+    padding-left: 2.2rem;
+  }
+
+  .marco::before {
+    left: -2.95rem;
+  }
+
+  .lista-tecnologias {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rodape-base {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .destaques {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .destaques-laterais {
+    grid-template-columns: 1fr;
+    order: 0;
+    align-content: stretch;
+  }
+
+  .destaques-laterais .destaque-mini {
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  }
+
+  .destaques-laterais .destaque-mini img {
+    width: 110px;
+    height: 76px;
+  }
+
+  .destaque-principal {
+    min-height: 460px;
+  }
+
+  .grade-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grade-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .noticia-lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .calendario {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .analise {
+    grid-template-columns: 340px 1fr;
+  }
+
+  .marco {
+    grid-template-columns: 320px 1fr;
+  }
+
+  .lista-tecnologias {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .comunidade-layout {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .lista-sugestoes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rodape-grade {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nx-nav .navbar-collapse {
+    width: auto;
+    padding-bottom: 0;
+  }
+
+  .nx-nav .navbar-nav {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .menu-botao {
+    display: none;
+  }
+
+  .menu-colapso {
+    display: block;
+    width: auto;
+    padding-bottom: 0;
+  }
+
+  .menu-lista {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .nx-nav .nav-link,
+  .menu-lista a {
+    padding: 0.55rem 0.5rem;
+    font-size: 0.88rem;
+  }
+
+  .nx-nav .nav-link::after,
+  .menu-lista a::after {
+    left: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 3.4rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hero-acoes .botao,
+  .hero-acoes .btn {
+    width: 100%;
+  }
+
+  .destaque-texto h2 {
+    font-size: 1.35rem;
+  }
+
+  .tabela-nx {
+    font-size: 0.85rem;
+  }
+
+  .analise-topo {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1279px) {
+  .nx-nav .nav-link,
+  .menu-lista a {
+    padding: 0.55rem 0.38rem;
+    font-size: 0.82rem;
+  }
+
+  .nx-nav .nav-link::after,
+  .menu-lista a::after {
+    left: 0.38rem;
+    right: 0.38rem;
+  }
+
+  .marca {
+    font-size: 1rem;
+  }
+}
